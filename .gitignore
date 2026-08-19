@@ -1,0 +1,15 @@
+/build/
+wal_data/
+*.log
+*.exe
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+*.ninja
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+wal/
