@@ -611,7 +611,8 @@ struct BPlusTree::Iterator::Impl {
     }
 
     void FindFirst() {
-        Slice start(has_start ? start_key : std::string());
+        std::string empty_key;
+        Slice start(has_start ? start_key : empty_key);
         current_leaf = has_start ? tree->FindLeaf(start) : tree->root_id_;
         if (!has_start) {
             while (current_leaf) {
